@@ -17,9 +17,10 @@ export default function Home() {
       <Projects />
       <About />
       <Hero />
-      <Tours />
-      <ParallaxSection />
+
       <WhatsappWrapper>
+        <Tours />
+        <ParallaxSection />
         {/* <Services />
         <CheckVaa />
         <AppMobile /> */}
