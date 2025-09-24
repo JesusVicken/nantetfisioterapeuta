@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   title: "Carolina Nantet",
   description: "Já imaginou viver sem dor?",
   icons: {
-    icon: "/logo2.jpg",
+    icon: "/logo1.png",
   },
 }
 
