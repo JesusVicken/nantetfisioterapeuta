@@ -223,7 +223,7 @@ export function Footer() {
       >
         <iframe
           title="Localização Carolina Nantet - Pilates"
-          src="https://www.google.com/maps?q=CLS+304+Bloco+C,+Asa+Norte,+Brasília+-+DF&output=embed"
+          src="https://www.google.com/maps?q=CLN+304+Bloco+C+Loja+32+-+Asa+Norte,+Brasília+-+DF&output=embed"
           width="100%"
           height="100%"
           loading="lazy"
@@ -232,6 +232,7 @@ export function Footer() {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
+
     </section>
   )
 }
