@@ -165,7 +165,7 @@ export function Footer() {
             <h3 className="text-2xl font-semibold mb-3">Redes Sociais</h3>
             <div className="flex gap-5 mt-2">
               <a
-                href="https://www.facebook.com/cristianodepireux.7?locale=pt_BR"
+                href="https://www.facebook.com/carol.nantet?locale=pt_BR"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition hover:scale-110"
@@ -173,7 +173,7 @@ export function Footer() {
                 <FacebookLogo size={32} weight="fill" className="text-[#1877F2]" />
               </a>
               <a
-                href="https://www.instagram.com/cristianodepireux/"
+                href="https://www.instagram.com/carolinanantet/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition hover:scale-110"
@@ -189,7 +189,7 @@ export function Footer() {
                 <YoutubeLogo size={32} weight="fill" className="text-[#FF0000]" />
               </a>
               <a
-                href="https://www.linkedin.com/in/cristiano-depireux-82380b372/"
+                href="https://www.linkedin.com/in/carolina-nantet-0012a4231/?originalSubdomain=br"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition hover:scale-110"
