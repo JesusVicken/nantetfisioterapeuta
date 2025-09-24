@@ -1,3 +1,5 @@
+
+
 'use client'
 
 import { Parallax } from 'react-scroll-parallax'
@@ -12,7 +14,7 @@ gsap.registerPlugin(ScrollTrigger)
 const phrases = [
     "Carolina Nantet Fisioterapeuta",
     "Agende uma aula de Pilates",
-    " Especialista em Dor Crônica",
+    "Especialista em Dor Crônica",
     "Performance Atlética",
     "Condicionamento Físico"
 ]
@@ -64,22 +66,31 @@ export default function HeroPilates() {
             className="relative h-[90vh] md:h-[95vh] lg:h-screen overflow-hidden"
             data-aos="fade-up"
         >
-            {/* Vídeo de background com a tag <video> */}
+            {/* Vídeo de background */}
             <Parallax speed={-20} className="absolute inset-0">
-                <div className="absolute inset-0">
-                    <video
-                        src="/nantet.mp4" // ATENÇÃO: Renomeie para o nome do seu arquivo de vídeo
-                        autoPlay
-                        muted
-                        loop
-                        playsInline
-                        className="w-full h-full object-cover pointer-events-none"
-                    />
-                </div>
+                <video
+                    src="/nantet.mp4"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="w-full h-full object-cover pointer-events-none"
+                />
             </Parallax>
 
             {/* Overlay para contraste */}
             <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center z-10 px-4 space-y-8">
+
+                {/* Logo no topo central */}
+                <div className="absolute top-10 left-1/2 transform -translate-x-1/2 z-20">
+                    <img
+                        src="/logo1.png"
+                        alt="Logo"
+                        className="w-32 sm:w-40 md:w-48 lg:w-56"
+                    />
+                </div>
+
+                {/* Texto principal */}
                 <div ref={phraseRef} className="w-full max-w-4xl">
                     <AnimatePresence mode="wait">
                         <motion.h2
@@ -95,7 +106,7 @@ export default function HeroPilates() {
                     </AnimatePresence>
                 </div>
 
-                {/* Botão WhatsApp */}
+                {/* Botão WhatsApp
                 <div
                     className="mt-2 animate-bounce hover:animate-none transition-all duration-300"
                     data-aos="zoom-in"
@@ -111,7 +122,7 @@ export default function HeroPilates() {
                         <WhatsappLogo weight="fill" className="w-6 h-6 sm:w-7 sm:h-7" />
                         <span>Agende uma aula</span>
                     </a>
-                </div>
+                </div> */}
             </div>
         </div>
     )

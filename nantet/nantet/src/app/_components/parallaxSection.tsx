@@ -43,7 +43,7 @@ export default function ParallaxSection() {
                 {/* Camada da imagem da seção */}
                 <ParallaxBannerLayer speed={-25}>
                     <Image
-                        src="/parallax.webp" // imagem da seção
+                        src="/parallax.jpg" 
                         alt="Carolina Nantet Fisioterapeuta"
                         fill
                         className="object-cover"
@@ -51,12 +51,12 @@ export default function ParallaxSection() {
                     />
                 </ParallaxBannerLayer>
 
-                {/* Overlay com texto */}
+                {/* Overlay com texto
                 <div className="absolute inset-0 flex items-center justify-center bg-black/30">
                     <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white text-center px-4">
                         Carolina Nantet Fisioterapeuta
                     </h2>
-                </div>
+                </div> */}
             </ParallaxBanner>
         </section>
     )
