@@ -1,6 +1,6 @@
 import Image from "next/image"
 import nantet from "../../../public/nantet.about.jpg"
-import cpp2 from "../../../public/logo2.png"
+import cpp2 from "../../../public/logo2.jpg"
 import { Check } from "lucide-react"
 import { WhatsappLogo } from "@phosphor-icons/react/dist/ssr"
 
