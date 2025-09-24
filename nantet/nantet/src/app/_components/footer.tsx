@@ -223,15 +223,16 @@ export function Footer() {
       >
         <iframe
           title="Localização Carolina Nantet - Pilates"
-          src="https://www.google.com/maps?q=CLN+304+Bloco+C+Loja+32+-+Asa+Norte,+Brasília+-+DF&output=embed"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.0366266613613!2d-47.88794132495667!3d-15.75001698490859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3bdfc0b1c7a5%3A0x53c3778981b2c893!2sCLN%20304%20Bloco%20C%20-%20Loja%2032%20-%20Asa%20Norte%2C%20Bras%C3%ADlia%20-%20DF%2C%2070746-530!5e0!3m2!1spt-BR!2sbr!4v1727187845672!5m2!1spt-BR!2sbr"
           width="100%"
           height="100%"
-          loading="lazy"
           style={{ border: 0 }}
+          loading="lazy"
           allowFullScreen
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
+
 
     </section>
   )

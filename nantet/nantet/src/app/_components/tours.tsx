@@ -5,13 +5,13 @@ import {
     ChevronLeft,
     ChevronRight,
     Clock,
-    Users,
-    Handshake,
-    Sunrise,
-    Moon,
     Dumbbell,
+    Laptop,
+    Trophy,
+    StretchHorizontal,
+    Activity,
 } from 'lucide-react'
-// import { WhatsappLogo } from '@phosphor-icons/react'
+
 import treinoPresencial from '../../../public/cris1.jpg'
 import treinoOnline from '../../../public/cris2.jpg'
 import canoaHavaiana from '../../../public/nantet7.jpg'
@@ -29,7 +29,7 @@ const services = [
         description:
             'Sessões individuais ou em grupo com foco em dor crônica, mobilidade, força e consciência corporal.',
         duration: 'Flexível conforme sua agenda',
-        icon: <Users className="w-6 h-6 text-white" />,
+        icon: <Dumbbell className="w-6 h-6 text-white" />,
         linkText:
             'Olá Carolina! Gostaria de mais informações sobre as aulas presenciais de Pilates.',
         image: treinoPresencial,
@@ -39,7 +39,7 @@ const services = [
         description:
             'Aulas via vídeo com planos personalizados, adaptados ao seu ritmo e necessidade, para praticar de qualquer lugar.',
         duration: 'A qualquer hora, no seu ritmo',
-        icon: <Handshake className="w-6 h-6 text-white" />,
+        icon: <Laptop className="w-6 h-6 text-white" />,
         linkText: 'Olá Carolina! Quero saber como funcionam as aulas online e o acompanhamento.',
         image: treinoOnline,
     },
@@ -48,7 +48,7 @@ const services = [
         description:
             'Treinos específicos para atletas ou quem deseja melhorar força, estabilidade, mobilidade e prevenção de lesões.',
         duration: 'Sessões semanais ou conforme necessidade',
-        icon: <Sunrise className="w-6 h-6 text-white" />,
+        icon: <Trophy className="w-6 h-6 text-white" />,
         linkText: 'Olá Carolina! Tenho interesse em Pilates focado em performance atlética.',
         image: canoaHavaiana,
     },
@@ -57,7 +57,7 @@ const services = [
         description:
             'Práticas que promovem bem-estar, flexibilidade e redução de dores, com foco em qualidade de vida e consciência corporal.',
         duration: 'Sessões individuais ou em grupo',
-        icon: <Moon className="w-6 h-6 text-white" />,
+        icon: <StretchHorizontal className="w-6 h-6 text-white" />,
         linkText: 'Olá Carolina! Quero saber mais sobre alongamento, mobilidade e yoga.',
         image: mobilidade,
     },
@@ -66,7 +66,7 @@ const services = [
         description:
             'Treinos para força, resistência, equilíbrio e postura, combinando técnicas de fisioterapia e Pilates.',
         duration: 'Programação personalizada',
-        icon: <Dumbbell className="w-6 h-6 text-white" />,
+        icon: <Activity className="w-6 h-6 text-white" />,
         linkText: 'Olá Carolina! Quero participar das aulas de Pilates focadas em condicionamento físico.',
         image: musculacao,
     },
@@ -123,7 +123,7 @@ export function Tours() {
                                                 src={item.image}
                                                 alt={item.title}
                                                 fill
-                                                className={`object-cover`}
+                                                className="object-cover"
                                                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                                             />
                                         </div>
