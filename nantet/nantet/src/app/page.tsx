@@ -14,15 +14,12 @@ import ParallaxSection from "./_components/parallaxSection"
 export default function Home() {
   return (
     <main>
-
       <Projects />
-
       <About />
       <Hero />
       <Tours />
       <ParallaxSection />
       <WhatsappWrapper>
-
         {/* <Services />
         <CheckVaa />
         <AppMobile /> */}
