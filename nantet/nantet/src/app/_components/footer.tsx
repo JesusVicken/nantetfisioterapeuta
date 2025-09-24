@@ -7,6 +7,9 @@ import {
   YoutubeLogo,
   WhatsappLogo,
   LinkedinLogo,
+  Phone,
+  MapPin,
+  Clock,
 } from '@phosphor-icons/react/dist/ssr'
 import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
@@ -14,17 +17,13 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 import sunTech from '../../../public/sun.jpg'
 
-
 gsap.registerPlugin(ScrollTrigger)
 
-const partners = [
-  { name: 'Sun Tech', logo: sunTech }
-]
+const partners = [{ name: 'Sun Tech', logo: sunTech }]
 
 export function Footer() {
-  const whatsappNumber = '556196780739'
-  const whatsappMessage =
-    'Olá Carolina! Gostaria de agendar uma aula de Pilates!'
+  const whatsappNumber = '556182795960'
+  const whatsappMessage = 'Olá Carolina! Gostaria de agendar uma aula de Pilates!'
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
     whatsappMessage
   )}`
@@ -34,7 +33,6 @@ export function Footer() {
   const mapRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    // Anima os parceiros
     if (partnersRef.current) {
       const partnerCards = gsap.utils.toArray('.partner-card', partnersRef.current)
       gsap.fromTo(
@@ -54,7 +52,6 @@ export function Footer() {
       )
     }
 
-    // Anima as seções do footer
     if (sectionsRef.current) {
       const sections = sectionsRef.current.querySelectorAll('.footer-section')
       gsap.fromTo(
@@ -74,7 +71,6 @@ export function Footer() {
       )
     }
 
-    // Anima o mapa
     if (mapRef.current) {
       gsap.fromTo(
         mapRef.current,
@@ -135,9 +131,13 @@ export function Footer() {
         >
           {/* SOBRE */}
           <div className="footer-section opacity-0" data-animate-section>
-            <h3 className="text-2xl font-semibold mb-3">Carolina Nantet - Fisioterapeuta</h3>
+            <h3 className="text-2xl font-semibold mb-3">
+              Carolina Nantet - Fisioterapeuta
+            </h3>
             <p className="mb-4 text-gray-300 leading-relaxed">
-              Transformando vidas por meio de aulas de Pilates, treinos personalizados e práticas de bem-estar que promovem mobilidade, força e consciência corporal.
+              Transformando vidas por meio de aulas de Pilates, treinos
+              personalizados e práticas de bem-estar que promovem mobilidade,
+              força e consciência corporal.
             </p>
             <a
               href={whatsappLink}
@@ -153,10 +153,25 @@ export function Footer() {
           {/* CONTATOS */}
           <div className="footer-section opacity-0" data-animate-section>
             <h3 className="text-2xl font-semibold mb-3">Contato</h3>
-            <ul className="space-y-2 text-gray-300">
-              <li>📞 +55 61 9678-0739</li>
-              <li>📍 Local: CLS 304 Bloco C, Asa Norte, Brasília - DF</li>
-              <li>⏰ Horários sob agendamento, entre em contato para verificar disponibilidade</li>
+            <ul className="space-y-3 text-gray-300">
+              <li className="flex items-center gap-2">
+                <Phone size={20} weight="fill" className="text-green-400" />
+                <span>+55 61 98279-5960</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <MapPin size={20} weight="fill" className="text-red-400 mt-1" />
+                <span>
+                  CLN 304 Bloco C Loja 32 - Subsolo <br /> Asa Norte, Brasília -
+                  DF
+                </span>
+              </li>
+              <li className="flex items-center gap-2">
+                <Clock size={20} weight="fill" className="text-yellow-400" />
+                <span>
+                  Horários sob agendamento <br /> Entre em contato para verificar
+                  disponibilidade
+                </span>
+              </li>
             </ul>
           </div>
 

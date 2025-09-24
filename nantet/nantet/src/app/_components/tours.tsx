@@ -11,7 +11,7 @@ import {
     Moon,
     Dumbbell,
 } from 'lucide-react'
-import { WhatsappLogo } from '@phosphor-icons/react'
+// import { WhatsappLogo } from '@phosphor-icons/react'
 import treinoPresencial from '../../../public/cris1.jpg'
 import treinoOnline from '../../../public/cris2.jpg'
 import canoaHavaiana from '../../../public/nantet7.jpg'
@@ -141,16 +141,6 @@ export function Tours() {
                                                 <Clock className="w-4 h-4" />
                                                 <span>{item.duration}</span>
                                             </div>
-
-                                            <a
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                href={`https://wa.me/556195982423?text=${encodeURIComponent(item.linkText)}`}
-                                                className="flex items-center gap-2 bg-white text-black px-3 py-1 rounded-lg transition-all text-sm font-medium hover:bg-zinc-200 hover:shadow-lg hover:shadow-white/20"
-                                            >
-                                                <WhatsappLogo className="w-4 h-4" />
-                                                Bora Treinar!?
-                                            </a>
                                         </div>
                                     </article>
                                 </div>

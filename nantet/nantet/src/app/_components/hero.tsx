@@ -3,7 +3,7 @@
 import { WhatsappLogo } from '@phosphor-icons/react/dist/ssr'
 import { Check } from "lucide-react"
 import Carolina from "../../../public/nantet.hero.jpg"
-import CarolinaDesktop from "../../../public/nantet.hero.desktop.jpg" // nova imagem desktop
+import CarolinaDesktop from "../../../public/nantet.hero.desktop.jpg" 
 import Image from "next/image"
 
 export function Hero() {
@@ -104,7 +104,7 @@ export function Hero() {
             {/* Botão WhatsApp */}
             <div className="mt-4">
               <a
-                href={`https://wa.me/556196780739?text=${whatsappMessage}`}
+                href={`https://wa.me/556182795960?text=${whatsappMessage}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-600 text-white flex items-center justify-center w-fit gap-2 px-5 py-3 rounded-md hover:bg-green-700 transition"

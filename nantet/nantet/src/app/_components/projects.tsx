@@ -102,7 +102,7 @@ export default function HeroPilates() {
                     data-aos-delay="600"
                 >
                     <a
-                        href="https://wa.me/556196780739?text=Olá%Carolina.%20Gostaria%20de%20mais%20informações%20sobre%20as%20aulas%20de%20Pilates."
+                        href="https://wa.me/556182795960?text=Olá%Carolina.%20Gostaria%20de%20mais%20informações%20sobre%20as%20aulas%20de%20Pilates."
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bg-[#25D366] text-white flex items-center justify-center gap-3 px-6 sm:px-8 py-3 sm:py-4 rounded-full shadow-lg hover:bg-[#128C7E] transition-colors duration-300 text-base sm:text-lg font-medium"
